@@ -6,20 +6,22 @@
   font-family: Arial, sans-serif;
 }
 
+/* Estilos generales */
 body {
-  background-color: #f8f1f1; /* Fondo pastel suave */
+  background-color: #ffe6f2; /* Fondo pastel suave */
   color: #4a4a4a;
 }
 
 /* Estilos para el encabezado */
 header {
-  background-color: #ffcad4; /* Rosa pastel */
-  color: #ffffff;
-  padding: 20px;
+  background-color: #ff66b2;
+  color: white;
+  padding: 1rem;
   text-align: center;
-  border-bottom: 5px solid #ffafcc; /* Borde decorativo */
+  border-bottom: 5px solid #ff99cc; /* Borde decorativo */
 }
 
+/* Navegación */
 nav ul {
   list-style: none;
   display: flex;
@@ -33,13 +35,13 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #ffffff;
+  color: white;
   font-size: 18px;
   transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #ff80ab; /* Rosa más oscuro al pasar el mouse */
+  color: #ff3385;
 }
 
 /* Estilos para la sección de productos */
@@ -59,12 +61,12 @@ nav ul li a:hover {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
-  border: 2px solid #ffafcc; /* Borde rosa pastel */
+  border: 2px solid #ff99cc;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; /* Asegura distribución uniforme */
-  height: 100%; /* Hace que todos los productos tengan la misma altura */
+  justify-content: space-between;
+  height: 100%;
 }
 
 .producto:hover {
@@ -73,14 +75,14 @@ nav ul li a:hover {
 
 .producto img {
   width: 100%;
-  height: 250px; /* Altura fija */
-  object-fit: cover; /* Mantiene la proporción sin deformar */
+  height: 250px;
+  object-fit: cover;
   border-radius: 10px;
 }
 
 .producto h2 {
   margin: 10px 0;
-  color: #ff758f; /* Rosa más fuerte */
+  color: #ff758f;
   font-size: 20px;
 }
 
@@ -89,7 +91,7 @@ nav ul li a:hover {
   font-weight: bold;
 }
 
-/* Estilos para el botón */
+/* Estilos para los botones */
 button {
   margin-top: 15px;
   background-color: #b5ead7; /* Verde menta pastel */
@@ -107,11 +109,89 @@ button:hover {
   transform: scale(1.1);
 }
 
+/* Estilos para formularios */
+form {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ff66b2;
+}
+
+input,
+textarea {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ff99cc;
+  border-radius: 4px;
+  background-color: #fff0f5;
+}
+
+/* Carrusel */
+.carrusel {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  padding: 10px;
+}
+
+.carrusel-contenedor {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carrusel-contenedor img {
+  width: 100%;
+  height: auto;
+  flex: 0 0 100%;
+  object-fit: cover;
+}
+
+.boton-carrusel {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.boton-carrusel.anterior {
+  left: 10px;
+}
+
+.boton-carrusel.siguiente {
+  right: 10px;
+}
+
+.boton-carrusel:hover {
+  background-color: #e60073;
+}
+
 /* Estilos para el pie de página */
 footer {
-  background-color: #ffcad4; /* Rosa pastel */
-  color: white;
   text-align: center;
   padding: 15px;
+  background-color: #ff66b2;
+  color: white;
   margin-top: 20px;
 }
